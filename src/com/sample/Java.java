@@ -1,7 +1,7 @@
 package com.sample;
 
 import java.util.List;
-
+import org.openqa.Webdriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,8 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Java {
 public static void main(String[] args) throws InterruptedException {
 
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\91866\\Documents\\workpase\\selenium\\Driver\\chromedriver.exe ");
-	ChromeDriver driver = new ChromeDriver();
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\91866\\Documents\\workpase\\MohanRaj\\Driver\\chromedriver.exe");
+	WebDriver driver = new ChromeDriver();
 	driver.get("https://kyro.pages.dev/");
 	driver.manage().window().maximize();
 	WebElement btnLogin = driver.findElement(By.xpath("(//button[@class='LoginButton_login_button__ehTMa'])[1]"));
